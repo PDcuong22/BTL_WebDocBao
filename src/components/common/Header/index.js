@@ -1,32 +1,32 @@
-import React, { useEffect } from 'react';
-import classNames from 'classnames/bind';
-import styles from './Header.module.scss';
+import React, { useEffect } from "react";
+import classNames from "classnames/bind";
+import styles from "./Header.module.scss";
 
 const cx = classNames.bind(styles);
 
 function Header() {
   return (
-    <header>
+    <div className={cx("wrapper")}>
       <nav>
-        <h1 className={cx('logo')}>
+        <h1 className={cx("logo")}>
           <img
             src="https://icdn.24h.com.vn/images/2014/24h_logo_trang_chu_2015.png"
             alt=""
           />
         </h1>
-        <ul className={cx('menu')}>
+        <ul className={cx("menu")}>
           <li>
-            <div className={cx('category')}>
+            <div className={cx("category")}>
               <img src="https://cdn.24h.com.vn/images/2014/menu-top-xem-danh-muc.gif" />
               <a href="#">Danh muc</a>
             </div>
-            <ul className={cx('submenu')}>
+            <ul className={cx("submenu")}>
               <li>
                 <a>Trang chủ 24h</a>
               </li>
               <li>
                 <a>Tin tức trong ngày</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Chính trị xã hội</a>
                     <a href="#">Đời sống- dân sinh</a>
@@ -41,7 +41,7 @@ function Header() {
               </li>
               <li>
                 <a>Bóng đá</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">lịch thi đấu bóng đá</a>
                     <a href="#">lịch thi đấu bóng đá hôm nay</a>
@@ -79,7 +79,7 @@ function Header() {
               </li>
               <li>
                 <a>Thế giới</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Điểm nóng</a>
                     <a href="#">Quân sự</a>
@@ -91,7 +91,7 @@ function Header() {
               </li>
               <li>
                 <a>Thời trang</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Thời trang công sở</a>
                     <a href="#">Quân sự</a>
@@ -103,7 +103,7 @@ function Header() {
               </li>
               <li>
                 <a>Pháp luật</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Vụ án nổi tiếng</a>
                     <a href="#">Trọng án</a>
@@ -116,7 +116,7 @@ function Header() {
               </li>
               <li>
                 <a>Thời trang Hi-tech</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Điện thoại</a>
                     <a href="#">Đánh giá</a>
@@ -136,7 +136,7 @@ function Header() {
               </li>
               <li>
                 <a>Kinh doanh</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Doanh nhân</a>
                     <a href="#">Tài chính</a>
@@ -156,7 +156,7 @@ function Header() {
               </li>
               <li>
                 <a>Ẩm thực</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Món ngon mỗi ngày</a>
                     <a href="#">Thực đơn hàng ngày</a>
@@ -169,7 +169,7 @@ function Header() {
               </li>
               <li>
                 <a>Đàn ông</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Đàn ông khỏe đẹp</a>
                     <a href="#">Đàn ông sành điệu</a>
@@ -181,7 +181,7 @@ function Header() {
               </li>
               <li>
                 <a>Làm đẹp</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Thẩm mỹ viện</a>
                     <a href="#">Tư vấn làm đẹp</a>
@@ -192,7 +192,7 @@ function Header() {
               </li>
               <li>
                 <a>Đời sống showbiz</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Sao Việt</a>
                     <a href="#">24h gặp gỡ</a>
@@ -203,7 +203,7 @@ function Header() {
               </li>
               <li>
                 <a>Giải trí</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Phim</a>
                     <a href="#">Nhạc</a>
@@ -214,7 +214,7 @@ function Header() {
               </li>
               <li>
                 <a>Bạn trẻ-Cuộc sống</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Chuyện công sở</a>
                     <a href="#">Tình yêu -Giới tính</a>
@@ -227,7 +227,7 @@ function Header() {
               </li>
               <li>
                 <a>Giáo dục- du học</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Tuyển sinh ĐH-CĐ</a>
                     <a href="#">Dạy con</a>
@@ -241,7 +241,7 @@ function Header() {
               </li>
               <li>
                 <a>Thể thao</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Tennis</a>
                     <a href="#">Võ thuật -UFC-Quyền Anh</a>
@@ -266,7 +266,7 @@ function Header() {
               </li>
               <li>
                 <a>Phi thường kỳ quặc</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Hiếm có khó tìm</a>
                     <a href="#">Video clip chuyện là</a>
@@ -277,7 +277,7 @@ function Header() {
               </li>
               <li>
                 <a>Công nghệ thông tin</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Game</a>
                     <a href="#">Phần mềm</a>
@@ -292,7 +292,7 @@ function Header() {
               </li>
               <li>
                 <a>Ô tô</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Tin tức ô tô</a>
                     <a href="#">Bảng giá xe ô tô</a>
@@ -306,7 +306,7 @@ function Header() {
               </li>
               <li>
                 <a>Xe máy - xe đạp</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Thế giới xe</a>
                     <a href="#">Bảng giá xe</a>
@@ -322,7 +322,7 @@ function Header() {
               </li>
               <li>
                 <a>Thị trường- tiêu dùng</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Thị trường 24h</a>
                     <a href="#">Giá cả hàng hóa</a>
@@ -334,7 +334,7 @@ function Header() {
               </li>
               <li>
                 <a>Du lịch</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Du lịch Việt Nam</a>
                     <a href="#">Du lịch Trung Quốc</a>
@@ -348,7 +348,7 @@ function Header() {
               </li>
               <li>
                 <a>Sức khỏe đời sống</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Bệnh đàn ông</a>
                     <a href="#">Bệnh phụ nữ</a>
@@ -366,7 +366,7 @@ function Header() {
               </li>
               <li>
                 <a>Cười 24h</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Clip hài hước</a>
                     <a href="#">Tranh vui</a>
@@ -376,7 +376,7 @@ function Header() {
               </li>
               <li>
                 <a>Media</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Intrographics</a>
                     <a href="#">Video</a>
@@ -388,7 +388,7 @@ function Header() {
               </li>
               <li>
                 <a>Video tổng hợp</a>
-                <ul className={cx('submenu2')}>
+                <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Clip nóng</a>
                     <a href="#">Video tin tức</a>
@@ -414,11 +414,11 @@ function Header() {
             </ul>
           </li>
           <li>
-            <div className={cx('category')}>
+            <div className={cx("category")}>
               <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/tintuc-1541404755-851-width20height18.png" />
               <a href="#">Tin tuc</a>
             </div>
-            <ul className={cx('submenu')}>
+            <ul className={cx("submenu")}>
               <li>
                 <a>Chính trị -xã hội</a>
               </li>
@@ -446,11 +446,11 @@ function Header() {
             </ul>
           </li>
           <li>
-            <div className={cx('category')}>
+            <div className={cx("category")}>
               <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/thegioi-1541404755-943-width20height20.png" />
               <a href="#">Bóng đá</a>
             </div>
-            <ul className={cx('submenu')}>
+            <ul className={cx("submenu")}>
               <li>
                 <a>lịch thi đấu bóng đá</a>
               </li>
@@ -550,11 +550,11 @@ function Header() {
             </ul>
           </li>
           <li>
-            <div className={cx('category')}>
+            <div className={cx("category")}>
               <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/lamdep-1541404755-172-width10height20.png" />
               <a href="#">Làm đẹp</a>
             </div>
-            <ul className={cx('submenu')}>
+            <ul className={cx("submenu")}>
               <li>
                 <a>Thẩm mỹ viện</a>
               </li>
@@ -570,11 +570,11 @@ function Header() {
             </ul>
           </li>
           <li>
-            <div className={cx('category')}>
+            <div className={cx("category")}>
               <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/showbiz-1541404755-320-width20height20.png" />
               <a href="#">Showbiz</a>
             </div>
-            <ul className={cx('submenu')}>
+            <ul className={cx("submenu")}>
               <li>
                 <a>Sao Việt</a>
               </li>
@@ -590,11 +590,11 @@ function Header() {
             </ul>
           </li>
           <li>
-            <div className={cx('category')}>
+            <div className={cx("category")}>
               <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/taichinh-1541404755-784-width19height19.png" />
               <a href="#">Kinh doanh</a>
             </div>
-            <ul className={cx('submenu')}>
+            <ul className={cx("submenu")}>
               <li>
                 <a>Doanh nhân</a>
               </li>
@@ -628,11 +628,11 @@ function Header() {
             </ul>
           </li>
           <li>
-            <div className={cx('category')}>
+            <div className={cx("category")}>
               <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/dulich-1541404755-578-width20height20.png" />
               <a href="#">Du lịch</a>
             </div>
-            <ul className={cx('submenu')}>
+            <ul className={cx("submenu")}>
               <li>
                 <a>Du lịch Việt Nam</a>
               </li>
@@ -657,11 +657,11 @@ function Header() {
             </ul>
           </li>
           <li>
-            <div className={cx('category')}>
+            <div className={cx("category")}>
               <img src="	https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/amthuc-1541404755-635-width19height19.png" />
               <a href="#">Ẩm thực</a>
             </div>
-            <ul className={cx('submenu')}>
+            <ul className={cx("submenu")}>
               <li>
                 <a>Món ngon mỗi ngày</a>
               </li>
@@ -683,11 +683,11 @@ function Header() {
             </ul>
           </li>
           <li>
-            <div className={cx('category')}>
+            <div className={cx("category")}>
               <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/suckhoe-1541404755-232-width20height18.png" />
               <a href="#">Sức khỏe</a>
             </div>
-            <ul className={cx('submenu')}>
+            <ul className={cx("submenu")}>
               <li>
                 <a>Bệnh đàn ông</a>
               </li>
@@ -724,23 +724,23 @@ function Header() {
             </ul>
           </li>
           <li>
-            <div className={cx('category')}>
+            <div className={cx("category")}>
               <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/eva-1541404755-220-width16height20.png" />
               <a href="#">Phái đẹp</a>
             </div>
           </li>
           <li>
-            <div className={cx('category')}>
+            <div className={cx("category")}>
               <img src="https://icdn.24h.com.vn/upload/4-2022/images/2022-12-15/icon-header-1671068809-987-width20height20.png" />
               <a href="#">Đàn ông</a>
             </div>
           </li>
           <li>
-            <div className={cx('category')}>
+            <div className={cx("category")}>
               <img src="https://icdn.24h.com.vn/upload/1-2020/images/2020-02-10/icons8-fiat-500-96-1581317289-765-width24height15.png" />
               <a href="#">Ô tô</a>
             </div>
-            <ul className={cx('submenu')}>
+            <ul className={cx("submenu")}>
               <li>
                 <a>Tin tức ô tô</a>
               </li>
@@ -765,17 +765,17 @@ function Header() {
             </ul>
           </li>
           <li>
-            <div className={cx('category')}>
+            <div className={cx("category")}>
               <img src="https://icdn.24h.com.vn/upload/3-2019/images/2019-08-19/nha_icon-20x20px--1566203736-124-width23height23.png" />
               <a href="#">Ngoại hạng Anh</a>
             </div>
           </li>
-          <li>
-            <div className={cx('category')}>
+          {/* <li>
+            <div className={cx("category")}>
               <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-05-20/th----thao-1653012495-777-width20height22.png" />
               <a href="#">Thể thao</a>
             </div>
-            <ul className={cx('submenu')}>
+            <ul className={cx("submenu")}>
               <li>
                 <a>Tennis</a>
               </li>
@@ -830,11 +830,11 @@ function Header() {
             </ul>
           </li>
           <li>
-            <div className={cx('category')}>
+            <div className={cx("category")}>
               <img src="https://icdn.24h.com.vn/upload/1-2023/images/2023-01-30/phithuong-1675063724-137-width20height20.png" />
               <a href="#">Chuyện lạ</a>
             </div>
-            <ul className={cx('submenu')}>
+            <ul className={cx("submenu")}>
               <li>
                 <a>Hiếm có khó tìm</a>
               </li>
@@ -848,11 +848,11 @@ function Header() {
                 <a>Chuyện lạ quanh ta</a>
               </li>
             </ul>
-          </li>
+          </li> */}
         </ul>
-        <h1 className={cx('search_icon')}></h1>
+        <h1 className={cx("search_icon")}></h1>
       </nav>
-    </header>
+    </div>
   );
 }
 
