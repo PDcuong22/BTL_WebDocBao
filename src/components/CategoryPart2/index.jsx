@@ -35,9 +35,6 @@ function CategoryPart2() {
         <div className={cx("item")}>
           <a>Điểm chuẩn Trường ĐH Kinh tế Quốc dân dự kiến như thế nào?</a>
         </div>
-        <div className={cx("item")}>
-          <a>Được hỗ trợ 100% học phí, học sinh Đà Nẵng tiết kiệm được bao nhiêu mỗi tháng?</a>
-        </div>
       </div>
     </div>
   );
