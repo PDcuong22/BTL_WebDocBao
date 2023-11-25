@@ -1,7 +1,6 @@
 import classNames from "classnames/bind";
 import styles from "./DetailLayout.module.scss";
 import Header from "../../common/Header";
-
 const cx = classNames.bind(styles);
 function DetailLayout({ content }) {
   return (
@@ -12,8 +11,8 @@ function DetailLayout({ content }) {
         <div className={cx("partRight")}></div>
       </div>
       {/* <Footer /> */}
+      <div className={cx("content")}>{content}</div>
     </div>
   );
 }
-
 export default DetailLayout;
