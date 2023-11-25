@@ -1,12 +1,9 @@
-import classNames from "classnames/bind";
-import styles from "./Footer.module.scss";
 import classNames from 'classnames/bind';
 import styles from './Footer.module.scss';
 
 const cx = classNames.bind(styles);
 
 function Footer() {
-  return <div className={cx("wrapper")}>Đây là footer !</div>;
   return (
     <div className={cx('wrapper')}>
       <div className={cx('categories')}>
