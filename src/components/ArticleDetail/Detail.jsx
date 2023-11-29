@@ -1,17 +1,17 @@
 import classNames from "classnames/bind";
 import styles from "./ArticleDetail.module.scss";
+
 const cx = classNames.bind(styles);
 function ArticleDetail() {
   return (
     <div className={cx("wrapper")}>
-      <div className={cx("left")}>h1h1</div>
       <div className={cx("left")}>
         <div className={cx("header-item")}>
           <div className={cx("header-item1")}>Trang chủ</div>
           <div className={cx("header-item2")}>Bóng đá</div>
           <div className={cx("header-item3")}>Thứ Ba, ngày 18/07/2023 08:05 AM (GMT+7)</div>
         </div>
-
+    
       <div className={cx("tittle")}>
       Ronaldo tuyên bố giải Ả Rập tốt hơn MLS của Messi, đá chính ngày Al Nassr thua 0-5
       </div>
@@ -66,3 +66,6 @@ function ArticleDetail() {
       <div className={cx("right")}>h1h1</div>
     </div>
   );
+}
+
+export default ArticleDetail;
