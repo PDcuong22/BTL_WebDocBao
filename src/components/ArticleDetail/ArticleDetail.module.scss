@@ -22,8 +22,14 @@
 .header-item {
   flex-direction: row;
   display: flex;
+  justify-content: space-between;
 }
 
+.header-item12 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
 .header-item1 {
   border-radius: 2px;
   padding: 4px;
@@ -40,13 +46,12 @@
 .header-item3 {
   border-radius: 2px;
   padding: 4px;
-  margin-left: 340px;
 }
 
 .tittle {
   font-size: 30px;
   font-weight: 700;
-  padding: 10px;
+  margin: 36px 0;
 }
 
 .content1 {
@@ -65,6 +70,9 @@
 .news {
   text-align: center;
   padding: 5px;
+}
+.news img {
+  width: 100%;
 }
 
 .content3 {
