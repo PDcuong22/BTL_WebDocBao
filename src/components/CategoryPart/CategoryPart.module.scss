@@ -1,51 +1,66 @@
 .wrapper {
   width: 380px;
-  min-height: 200px;
+  // height: 350px;
   background-color: #fff;
-
-  margin-bottom: 20px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   display: flex;
   flex-direction: row;
-  padding: 8px 0;
-  margin-left: 4px;
+  padding: 8px 0 0 0;
 }
 
 .header-item {
   background-color: var(--primary-color);
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 4px;
   font-weight: 600;
+  color: #fff;
 }
 
 .header-item2 {
-  background-color: #ecf8f9;
-  border-radius: 2px;
+  background-color: #dedede;
+  border-radius: 4px;
   padding: 4px;
   margin-left: 8px;
+  font-weight: 500;
 }
+
 .tittle {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
+  padding: 8px 0;
+
   &:hover {
     cursor: pointer;
     color: var(--primary-color);
   }
+
+  overflow: hidden;
+  /* Ẩn phần dư thừa của nội dung */
+  text-overflow: ellipsis;
+  /* Hiển thị dấu chấm ba chấm (...) khi nội dung bị cắt */
+  white-space: nowrap;
 }
+
 .news {
   display: flex;
   flex-direction: row;
-  margin-top: 8px;
+
   margin-bottom: 4px;
 }
+
 .news1 {
   background-color: rgb(234, 248, 210);
 
   padding: 1px 10px;
-  overflow: hidden; /* Ẩn phần dư thừa của nội dung */
-  text-overflow: ellipsis; /* Hiển thị dấu chấm ba chấm (...) khi nội dung bị cắt */
+  overflow: hidden;
+  /* Ẩn phần dư thừa của nội dung */
+  text-overflow: ellipsis;
+  /* Hiển thị dấu chấm ba chấm (...) khi nội dung bị cắt */
   white-space: nowrap;
 }
 
@@ -61,6 +76,7 @@
   justify-content: flex-start;
   align-items: center;
 }
+
 .item a {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
@@ -68,30 +84,41 @@
   color: black;
   margin-left: 6px;
 
-  overflow: hidden; /* Ẩn phần dư thừa của nội dung */
-  text-overflow: ellipsis; /* Hiển thị dấu chấm ba chấm (...) khi nội dung bị cắt */
+  overflow: hidden;
+  /* Ẩn phần dư thừa của nội dung */
+  text-overflow: ellipsis;
+
+  /* Hiển thị dấu chấm ba chấm (...) khi nội dung bị cắt */
   &:hover {
     cursor: pointer;
     color: var(--primary-color);
   }
 }
+
 .item2 a {
   margin-left: 6px;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   color: black;
-  overflow: hidden; /* Ẩn phần dư thừa của nội dung */
-  text-overflow: ellipsis; /* Hiển thị dấu chấm ba chấm (...) khi nội dung bị cắt */
+  overflow: hidden;
+  /* Ẩn phần dư thừa của nội dung */
+  text-overflow: ellipsis;
+
+  /* Hiển thị dấu chấm ba chấm (...) khi nội dung bị cắt */
   &:hover {
     cursor: pointer;
     color: var(--primary-color);
   }
 }
+
 .content {
   margin-left: 8px;
-  max-height: 76px; /* Đặt chiều cao tối đa cho phần tử */
-  overflow: hidden; /* Ẩn phần dư thừa của nội dung */
-  text-overflow: ellipsis; /* Hiển thị dấu chấm ba chấm (...) khi nội dung bị cắt */
+  max-height: 76px;
+  /* Đặt chiều cao tối đa cho phần tử */
+  overflow: hidden;
+  /* Ẩn phần dư thừa của nội dung */
+  text-overflow: ellipsis;
+  /* Hiển thị dấu chấm ba chấm (...) khi nội dung bị cắt */
   // white-space: nowrap;
 }

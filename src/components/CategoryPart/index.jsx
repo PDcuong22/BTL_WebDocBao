@@ -17,8 +17,8 @@ function CategoryPart({ subCategoryId }) {
   const getArticle = async () => {
     let res = await articleApi.getArticleBySubCategory(subCategoryId);
     console.log("Hồ sơ phá án: ", res);
-    setArticleLevel1(res.filter((item) => item.level === 1));
-    setArticleLevel2(res.filter((item) => item.level === 2));
+    setArticleLevel1(res?.filter((item) => item.level === 1));
+    setArticleLevel2(res?.filter((item) => item.level === 2));
   };
 
   return (
@@ -33,7 +33,7 @@ function CategoryPart({ subCategoryId }) {
       </div>
       <Link
         to={`/detail/${articleLevel1[0]?._id}`}
-        style={{ textDecoration: "none" }}
+        style={{ textDecoration: "none", padding: "2px 0" }}
       >
         <p className={cx("tittle")}>{articleLevel1[0]?.header}</p>
       </Link>
