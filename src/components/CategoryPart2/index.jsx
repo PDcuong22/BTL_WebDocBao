@@ -15,8 +15,11 @@ function CategoryPart2({ subName, categoryId }) {
 
   const getSubCategories = async () => {
     let res = await subCateogryApi.getSubCategories(categoryId);
+    // const filteredSubCategories = subCategories.filter(
+    //   (item) => item.subCategoryName !== "Tin tức"
+    // );
     setSubCategories(res);
-    console.log("sub categories: ", res);
+    // console.log("sub categories: ", subCategories);
   };
   return (
     <div className={cx("wrapper")}>
