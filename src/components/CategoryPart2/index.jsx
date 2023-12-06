@@ -41,8 +41,7 @@ function CategoryPart2({ subName, categoryId }) {
       <div className={cx("news")}>
         <img
           src="https://icdn.24h.com.vn/upload/3-2023/images/2023-07-21//medium/adt1689907972-k2-373.jpg"
-          width="120"
-          height="90"
+          className={cx("image")}
         />
         <p className={cx("content")}>
           “Để phòng chống rủi ro, thí sinh nên đặt một số nguyện vọng và san đều

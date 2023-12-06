@@ -23,18 +23,18 @@ function Right() {
   return (
     <div className={cx("wrapper")}>
       <div className={cx("tittle")}>Tin tức thị trường</div>
-      <table>
+      <div className={cx("table")}>
         {article.slice(0, 5).map((item, index) => (
-          <tr>
+          <div className={cx("table1")}>
             <th>
-              <img src={item.image} width="120" height="90"></img>
+              <img src={item.image} className={cx("image")}></img>
             </th>
             <Link to={`/detail/${item._id}`} style={{ textDecoration: "none" }}>
               <td className={cx("header")}>{item.header}</td>
             </Link>
-          </tr>
+          </div>
         ))}
-      </table>
+      </div>
       <div className={cx("tittle")}>Thông tin chứng khoán</div>
       <table>
         <tr>

@@ -20,10 +20,23 @@ h1 {
   margin-bottom: 16px;
 }
 
-table {
+.table {
   font-family: arial;
   border-collapse: collapse;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.table1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.image {
+  width: 124px;
+  height: 90px;
 }
 
 td {
