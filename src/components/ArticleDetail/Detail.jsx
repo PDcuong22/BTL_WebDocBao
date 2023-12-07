@@ -43,19 +43,24 @@ function ArticleDetail() {
         </div>
 
         <div className={cx("tittle")}>{article[0]?.articleName}</div>
-        {article[0]?.content1.split("\n").map((line, index) => (
+        {article[0]?.content1?.split("\n").map((line, index) => (
           <div className={cx("content2")} key={index}>
             {line}
           </div>
         ))}
 
-        <div className={cx("news")}>
-          <img src={article[0]?.image} />
-        </div>
+        {article[0]?.content ? (
+          <></>
+        ) : (
+          <div className={cx("news")}>
+            <img src={article[0]?.image} />
+          </div>
+        )}
+        <div dangerouslySetInnerHTML={{ __html: article[0]?.content }}></div>
 
         <div className={cx("content3")}>{article[0]?.imageTittle}</div>
 
-        {article[0]?.content2.split("\n").map((line, index) => (
+        {article[0]?.content2?.split("\n").map((line, index) => (
           <div className={cx("content2")} key={index}>
             {line}
           </div>
