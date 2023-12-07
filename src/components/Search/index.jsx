@@ -4,6 +4,7 @@ import classNames from "classnames/bind";
 import { useEffect, useState } from "react";
 import { articleApi } from "../../services/article-api";
 import { Link } from "react-router-dom";
+import Right from "../Home/Right";
 
 const cx = classNames.bind(styles);
 
@@ -24,41 +25,46 @@ function Search() {
   };
   return (
     <div className={cx("wrapper")}>
-      <p className={cx("tittle")}>Món ngon mỗi ngày</p>
+      <div className={cx("left")}>
+        <p className={cx("tittle")}>
+          {articleLevel1[0]?.subCategoryId.subCategoryName}
+        </p>
+        <Link
+          to={`/detail/${articleLevel1[0]?._id}`}
+          style={{ textDecoration: "none" }}
+        >
+          <p className={cx("content")}>{articleLevel1[0]?.header}</p>
+        </Link>
+        <p className={cx("news")}>
+          <img src={articleLevel1[0]?.image} width="820" height="500" />
+        </p>
 
-      <Link
-        to={`/detail/${articleLevel1[0]?._id}`}
-        style={{ textDecoration: "none" }}
-      >
-        <p className={cx("content")}>{articleLevel1[0]?.header}</p>
-      </Link>
-      <p className={cx("news")}>
-        <img src={articleLevel1[0]?.image} width="820" height="500" />
-      </p>
-
-      {articleLevel1.slice(1).map((item, index) => (
-        <>
-          <Link to={`/detail/${item._id}`} style={{ textDecoration: "none" }}>
-            <p className={cx("tittle1")}>{item.header}</p>
-          </Link>
-          <div className={cx("news1")}>
-            <img src={item.image} width="200" height="150" />
-            <p className={cx("content1")}>{item.content1}</p>
-          </div>
-        </>
-      ))}
-
-      {articleLevel2.map((item, index) => (
-        <>
-          <Link to={`/detail/${item._id}`} style={{ textDecoration: "none" }}>
-            <p className={cx("tittle1")}>{item.header}</p>
-          </Link>
-          <div className={cx("news1")}>
-            <img src={item.image} width="200" height="150" />
-            <p className={cx("content1")}>{item.content1}</p>
-          </div>
-        </>
-      ))}
+        {articleLevel1.slice(1).map((item, index) => (
+          <>
+            <Link to={`/detail/${item._id}`} style={{ textDecoration: "none" }}>
+              <p className={cx("tittle1")}>{item.header}</p>
+            </Link>
+            <div className={cx("news1")}>
+              <img src={item.image} width="200" height="150" />
+              <p className={cx("content1")}>{item.content1}</p>
+            </div>
+          </>
+        ))}
+        {articleLevel2.map((item, index) => (
+          <>
+            <Link to={`/detail/${item._id}`} style={{ textDecoration: "none" }}>
+              <p className={cx("tittle1")}>{item.header}</p>
+            </Link>
+            <div className={cx("news1")}>
+              <img src={item.image} className={cx("image")} />
+              <p className={cx("content1")}>{item.content1}</p>
+            </div>
+          </>
+        ))}
+      </div>
+      <div className={cx("right")}>
+        <Right subCategoryId="64c9322480b0ef3155bbcaef" />
+      </div>
     </div>
   );
 }

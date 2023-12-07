@@ -6,25 +6,39 @@ import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
-function Right() {
+function Right({ subCategoryId, articleId }) {
   const [article, setArticle] = useState([]);
+  const [articleNot, setArticleNot] = useState([]);
+  useEffect(() => {
+    if (subCategoryId) {
+      getArticle();
+    }
+  }, [subCategoryId]);
 
   useEffect(() => {
-    getArticle();
-  }, []);
+    if (subCategoryId) {
+      getArticleNot();
+    }
+  }, [articleId]);
 
   const getArticle = async () => {
-    let res = await articleApi.getArticleBySubCategory(
-      "64c9322480b0ef3155bbcaef"
-    );
+    let res = await articleApi.getArticleBySubCategory(subCategoryId);
     setArticle(res);
     console.log("thị trường: ", res);
+  };
+  const getArticleNot = async () => {
+    let res = await articleApi.getArticleBySubCategoryNot(
+      subCategoryId,
+      articleId
+    );
+    setArticleNot(res);
+    console.log("thị trường222: ", res);
   };
   return (
     <div className={cx("wrapper")}>
       <div className={cx("tittle")}>Tin tức thị trường</div>
       <div className={cx("table")}>
-        {article.slice(0, 5).map((item, index) => (
+        {article.slice(0, 6).map((item, index) => (
           <div className={cx("table1")}>
             <th>
               <img src={item.image} className={cx("image")}></img>
@@ -35,7 +49,7 @@ function Right() {
           </div>
         ))}
       </div>
-      <div className={cx("tittle")}>Thông tin chứng khoán</div>
+      {/* <div className={cx("tittle")}>Thông tin chứng khoán</div>
       <table>
         <tr>
           <a> VN-INDEX </a>
@@ -58,7 +72,7 @@ function Right() {
           <g> +0.74 </g>
           <g> (+0.33) </g>
         </tr>
-      </table>
+      </table> */}
     </div>
   );
 }

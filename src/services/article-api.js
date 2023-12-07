@@ -10,4 +10,9 @@ export const articleApi = {
   getArticleBySubCategory(subCategoryId) {
     return axiosClient.get(`/article/subCategory/${subCategoryId}`);
   },
+  getArticleBySubCategoryNot(subCategoryId, articleId) {
+    return axiosClient.post(`/article/subCategoryNot/${subCategoryId}`, {
+      articleId: articleId,
+    });
+  },
 };

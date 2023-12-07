@@ -3,7 +3,7 @@ import Header from "../../common/Header";
 
 import classNames from "classnames/bind";
 import styles from "./HomeLayout.module.scss";
-import Right from "../../Home/Right"
+import Right from "../../Home/Right";
 
 const cx = classNames.bind(styles);
 function HomeLayout({ content }) {
@@ -13,10 +13,10 @@ function HomeLayout({ content }) {
       <div className={cx("content")}>
         <div className={cx("partLeft")}>{content}</div>
         <div className={cx("partRight")}>
-          <Right />
+          <Right subCategoryId="64c9322480b0ef3155bbcaef" />
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

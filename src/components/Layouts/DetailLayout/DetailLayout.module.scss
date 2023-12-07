@@ -1,19 +1,9 @@
 .wrapper {
-    width: 100%;
-  }
-  .content {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .partLeft {
-    width: 820px;
-    background-color: aqua;
-  }
-  
-  .partRight {
-    width: 320px;
-    background-color: rgb(255, 255, 255);
-    margin-left: 20px;
-  } 
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

@@ -1,10 +1,24 @@
 .wrapper {
   width: 100%;
-
+  display: flex;
+  justify-content: center;
   background-color: #ffffff;
   margin-bottom: 20px;
 }
 
+.left {
+  width: 820px;
+
+  background-color: #ffffff;
+  padding-top: 10px;
+}
+
+.right {
+  padding-top: 10px;
+  width: 320px;
+  background-color: rgb(255, 255, 255);
+  margin-left: 20px;
+}
 .tittle {
   font-size: 30px;
   font-weight: 700;
@@ -17,6 +31,11 @@
   flex-direction: row;
   margin-top: 8px;
   margin-bottom: 4px;
+}
+
+.image {
+  width: 180px;
+  height: 120px;
 }
 
 .content {
@@ -36,13 +55,14 @@
 }
 
 .tittle1 {
-  padding-top: 20px;
   font-size: 20px;
   font-weight: 600;
   &:hover {
     cursor: pointer;
     color: var(--primary-color);
   }
+  border-top: 1px solid #e3e3e3;
+  padding-top: 12px;
 }
 
 .news1 {

@@ -8,11 +8,7 @@ function SearchLayout({ content }) {
   return (
     <div className={cx("wrapper")}>
       <Header />
-
-      <div className={cx("content")}>
-        <div className={cx("partLeft")}>{content}</div>
-        <div className={cx("partRight")}></div>
-      </div>
+      <div className={cx("content")}>{content}</div>
       <Footer />
     </div>
   );
