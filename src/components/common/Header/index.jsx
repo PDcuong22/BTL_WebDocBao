@@ -15,10 +15,10 @@ function Header() {
           />
         </h1>
         <ul className={cx("menu")}>
-          <li>
+          {/* <li>
             <div className={cx("category")}>
               <img src="https://cdn.24h.com.vn/images/2014/menu-top-xem-danh-muc.gif" />
-              <a href="#">Danh muc</a>
+              <a href="#">Danh mục</a>
             </div>
             <ul className={cx("submenu")}>
               <li>
@@ -115,7 +115,7 @@ function Header() {
                 </ul>
               </li>
               <li>
-                <a>Thời trang Hi-tech</a>
+                <a>Thời trang</a>
                 <ul className={cx("submenu2")}>
                   <li>
                     <a href="#">Điện thoại</a>
@@ -180,13 +180,12 @@ function Header() {
                 </ul>
               </li>
               <li>
-                <a>Làm đẹp</a>
+                <a>Khoa học</a>
                 <ul className={cx("submenu2")}>
                   <li>
-                    <a href="#">Thẩm mỹ viện</a>
-                    <a href="#">Tư vấn làm đẹp</a>
-                    <a href="#">Làm đẹp cùng sao</a>
-                    <a href="#">Phong cách làm đẹp</a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
                   </li>
                 </ul>
               </li>
@@ -336,13 +335,11 @@ function Header() {
                 <a>Du lịch</a>
                 <ul className={cx("submenu2")}>
                   <li>
-                    <a href="#">Du lịch Việt Nam</a>
-                    <a href="#">Du lịch Trung Quốc</a>
-                    <a href="#">Du lịch Châu âu</a>
-                    <a href="#">Du lịch Châu á</a>
-                    <a href="#">Tin tức du lịch</a>
-                    <a href="#">Tra cứu địa điểm du lịch</a>
-                    <a href="#">Ảnh</a>
+                    <a href="#">Điểm đến</a>
+                    <a href="#">Ẩm thực</a>
+                    <a href="#">Dấu chân</a>
+                    <a href="#">Tư vấn</a>
+                    <a href="#">Cẩm nang</a>
                   </li>
                 </ul>
               </li>
@@ -412,218 +409,58 @@ function Header() {
                 <a>Video tổng hợp</a>
               </li>
             </ul>
-          </li>
-          <li>
-            <div className={cx("category")}>
-              <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/tintuc-1541404755-851-width20height18.png" />
-              <a href="#">Tin tuc</a>
-            </div>
-            <ul className={cx("submenu")}>
-              <li>
-                <a>Chính trị -xã hội</a>
-              </li>
-              <li>
-                <a>Đời sống dân sinh</a>
-              </li>
-              <li>
-                <a>Giao thông đô thị</a>
-              </li>
-              <li>
-                <a>Nóng trên mạng</a>
-              </li>
-              <li>
-                <a>Dự báo thời tiết</a>
-              </li>
-              <li>
-                <a>Lịch Vạn Niên</a>
-              </li>
-              <li>
-                <a>Tin Hà Nội</a>
-              </li>
-              <li>
-                <a>Vacxin covid 19</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <div className={cx("category")}>
-              <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/thegioi-1541404755-943-width20height20.png" />
-              <a href="#">Bóng đá</a>
-            </div>
-            <ul className={cx("submenu")}>
-              <li>
-                <a>lịch thi đấu bóng đá</a>
-              </li>
-              <li>
-                <a>lịch thi đấu bóng đá hôm nay</a>
-              </li>
-              <li>
-                <a>Video highlight</a>
-              </li>
-              <li>
-                <a>Bảng xếp hạng </a>
-              </li>
-              <li>
-                <a>Tường thuật trực tiếp</a>
-              </li>
-              <li>
-                <a>Bóng đá Ngoại Hạng Anh</a>
-              </li>
-              <li>
-                <a>Bóng đá Đức- Bundesliga</a>
-              </li>
-              <li>
-                <a>Video bàn thắng</a>
-              </li>
-              <li>
-                <a>Sự kiên- Bình luận</a>
-              </li>
-              <li>
-                <a>Livescore</a>
-              </li>
-              <li>
-                <a>FA cup</a>
-              </li>
-              <li>
-                <a>Kết quả bóng đá</a>
-              </li>
-              <li>
-                <a>Clip 1 phút bóng đá</a>
-              </li>
-              <li>
-                <a>Bóng đá Pháp -ligue1</a>
-              </li>
-              <li>
-                <a>Xem video highlight trên 24h.com.vn</a>
-              </li>
-              <li>
-                <a>AFF cup 2022</a>
-              </li>
-              <li>
-                <a>Bóng đá Việt Nam</a>
-              </li>
-              <li>
-                <a>Tin vắn bóng đá</a>
-              </li>
-              <li>
-                <a>Lịch bóng đá TV</a>
-              </li>
-              <li>
-                <a>Bóng đá Ý</a>
-              </li>
-              <li>
-                <a>Bóng đá Tây Ban Nha</a>
-              </li>
-              <li>
-                <a>Top ghi bàn</a>
-              </li>
-              <li>
-                <a>Cup C1 championleague</a>
-              </li>
-              <li>
-                <a>Các giải bóng đá khác</a>
-              </li>
-              <li>
-                <a>Tin bên lề bóng đá</a>
-              </li>
-              <li>
-                <a>Video highlight NHA</a>
-              </li>
-              <li>
-                <a>Tin chuyển Nhượng</a>
-              </li>
-              <li>
-                <a>Ảnh bóng đá- người đẹp</a>
-              </li>
-              <li>
-                <a>Ngôi sao bóng đá</a>
-              </li>
-              <li>
-                <a>Video bóng đá hot</a>
-              </li>
-              <li>
-                <a>Top 10+</a>
-              </li>
-              <li>
-                <a>Xếp hạng FIFA</a>
-              </li>
-            </ul>
-          </li>
+          </li> */}
           <li>
             <div className={cx("category")}>
               <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/lamdep-1541404755-172-width10height20.png" />
-              <a href="#">Làm đẹp</a>
+              <a href="#">KHoa học</a>
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Thẩm mỹ viện</a>
+                <a>Tin tức</a>
               </li>
               <li>
-                <a>Tư vấn làm đẹp</a>
+                <a>Phát minh</a>
               </li>
               <li>
-                <a>Làm đẹp cùng sao</a>
+                <a>Ứng dụng</a>
               </li>
               <li>
-                <a>Phong cách làm đẹp</a>
+                <a>Khoa học trong nước</a>
               </li>
             </ul>
           </li>
           <li>
             <div className={cx("category")}>
               <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/showbiz-1541404755-320-width20height20.png" />
-              <a href="#">Showbiz</a>
+              <a href="#">Giải trí</a>
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Sao Việt</a>
+                <a>Phim</a>
               </li>
               <li>
-                <a>24h Làm Đẹp</a>
+                <a>Âm nhạc</a>
               </li>
               <li>
-                <a>Talk Với Sao</a>
+                <a>Tin tức giải trí</a>
               </li>
               <li>
-                <a>Sao Châu Á</a>
+                <a>Giới sao</a>
               </li>
             </ul>
           </li>
           <li>
             <div className={cx("category")}>
-              <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/taichinh-1541404755-784-width19height19.png" />
+              <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/icons8-increase-96-copy-1541383138-358-width19height19.png" />
               <a href="#">Kinh doanh</a>
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Doanh nhân</a>
-              </li>
-              <li>
-                <a>Tài chính</a>
-              </li>
-              <li>
-                <a>Bất động sản</a>
-              </li>
-              <li>
-                <a>Khởi nghiệp</a>
-              </li>
-              <li>
-                <a>Doanh nghiệp</a>
-              </li>
-              <li>
-                <a>Ngân hàng</a>
-              </li>
-              <li>
                 <a>Chứng khoán</a>
               </li>
               <li>
-                <a>Tỉ giá ngoại tệ</a>
-              </li>
-              <li>
-                <a>Giá vàng hôm nay</a>
-              </li>
-              <li>
-                <a>Tiền Tiền Tiền</a>
+                <a>Doanh nghiệp</a>
               </li>
             </ul>
           </li>
@@ -640,25 +477,16 @@ function Header() {
                 <a>Du lịch Trung Quốc</a>
               </li>
               <li>
-                <a>Du lịch Châu âu</a>
+                <a>Du lịch Châu Âu</a>
               </li>
               <li>
-                <a>Du lịch Châu á</a>
-              </li>
-              <li>
-                <a>Tin tức du lịch</a>
-              </li>
-              <li>
-                <a>Tra cứu địa điểm du lịch</a>
-              </li>
-              <li>
-                <a>Ảnh</a>
+                <a>Du lịch Châu Á</a>
               </li>
             </ul>
           </li>
           <li>
             <div className={cx("category")}>
-              <img src="	https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/amthuc-1541404755-635-width19height19.png" />
+              <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/amthuc-1541404755-635-width19height19.png" />
               <a href="#">Ẩm thực</a>
             </div>
             <ul className={cx("submenu")}>
@@ -666,19 +494,10 @@ function Header() {
                 <a>Món ngon mỗi ngày</a>
               </li>
               <li>
-                <a>Thực đơn hàng ngày</a>
-              </li>
-              <li>
-                <a>Clip ẩm thực</a>
+                <a>Thực đơn</a>
               </li>
               <li>
                 <a>Tin tức ẩm thực</a>
-              </li>
-              <li>
-                <a>Tra cứu ẩm thực</a>
-              </li>
-              <li>
-                <a>Khéo tay</a>
               </li>
             </ul>
           </li>
@@ -689,51 +508,95 @@ function Header() {
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Bệnh đàn ông</a>
+                <a>Tin tức</a>
               </li>
               <li>
-                <a>Bệnh phụ nữ</a>
+                <a>Dinh dưỡng</a>
               </li>
               <li>
-                <a>Sức khỏe dinh dưỡng</a>
+                <a>Khỏe đẹp</a>
               </li>
               <li>
-                <a>Sức khỏe tình dục</a>
+                <a>Các bệnh</a>
               </li>
               <li>
-                <a>Phát minh y học</a>
-              </li>
-              <li>
-                <a>Tin tức sức khỏe</a>
-              </li>
-              <li>
-                <a>Vacxin covid 19</a>
-              </li>
-              <li>
-                <a>Ưng thư</a>
-              </li>
-              <li>
-                <a>Tra cứu các loại bệnh</a>
-              </li>
-              <li>
-                <a>Số liệu Covid 19</a>
-              </li>
-              <li>
-                <a>Bài thuốc dân gian</a>
+                <a>Vaccine</a>
               </li>
             </ul>
           </li>
           <li>
             <div className={cx("category")}>
-              <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/eva-1541404755-220-width16height20.png" />
-              <a href="#">Phái đẹp</a>
+              <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/phapluat-1541404695-794-width20height18.png" />
+              <a href="#">Pháp luật</a>
             </div>
+            <ul className={cx("submenu")}>
+              <li>
+                <a>Hồ sơ phá án</a>
+              </li>
+            </ul>
           </li>
           <li>
             <div className={cx("category")}>
-              <img src="https://icdn.24h.com.vn/upload/4-2022/images/2022-12-15/icon-header-1671068809-987-width20height20.png" />
-              <a href="#">Đàn ông</a>
+              <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/giaoduc-1541403678-183-width20height18.png" />
+              <a href="#">Giáo dục</a>
             </div>
+            <ul className={cx("submenu")}>
+              <li>
+                <a>Tin tức</a>
+              </li>
+              <li>
+                <a>Tuyển sinh</a>
+              </li>
+              <li>
+                <a>Diễn đàn</a>
+              </li>
+              <li>
+                <a>Chân dung</a>
+              </li>
+              <li>
+                <a>Giáo dục 4.0</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div className={cx("category")}>
+              <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/thethao-1541404619-794-width20height22.png" />
+              <a href="#">Thể thao</a>
+            </div>
+            <ul className={cx("submenu")}>
+              <li>
+                <a>Tennis</a>
+              </li>
+              <li>
+                <a>Người đẹp - Ngôi sao</a>
+              </li>
+              <li>
+                <a>Bóng chuyền</a>
+              </li>
+              <li>
+                <a>Thể thao Việt Nam</a>
+              </li>
+              <li>
+                <a>Môn thể thao khác</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div className={cx("category")}>
+              <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/thitruong-1541409252-196-width20height18.png" />
+              <a href="#">Bất động sản</a>
+            </div>
+            <ul className={cx("submenu")}>
+              <li>
+                <a>Chính sách</a>
+              </li>
+              <li>
+                <a>Thị trường</a>
+              </li>
+              <li>
+                <a>Không gian sống</a>
+              </li>
+            </ul>
           </li>
           <li>
             <div className={cx("category")}>
@@ -745,110 +608,100 @@ function Header() {
                 <a>Tin tức ô tô</a>
               </li>
               <li>
-                <a>Bảng giá xe ô tô</a>
-              </li>
-              <li>
-                <a>Tư vấn</a>
-              </li>
-              <li>
-                <a>Ngắm xe</a>
-              </li>
-              <li>
                 <a>Đánh giá xe</a>
               </li>
+            </ul>
+          </li>
+          <li>
+            <div className={cx("category")}>
+              <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/bantre-1541392580-852-width20height20.png" />
+              <a href="#">Đời sống</a>
+            </div>
+            <ul className={cx("submenu")}>
               <li>
-                <a>Clip giao thông</a>
+                <a>Nhịp sống</a>
               </li>
               <li>
-                <a>Tra cứu ô tô</a>
+                <a>Tổ ấm</a>
+              </li>
+              <li>
+                <a>Bài học sống</a>
               </li>
             </ul>
           </li>
           <li>
             <div className={cx("category")}>
-              <img src="https://icdn.24h.com.vn/upload/3-2019/images/2019-08-19/nha_icon-20x20px--1566203736-124-width23height23.png" />
-              <a href="#">Ngoại hạng Anh</a>
-            </div>
-          </li>
-          {/* <li>
-            <div className={cx("category")}>
-              <img src="https://icdn.24h.com.vn/upload/2-2022/images/2022-05-20/th----thao-1653012495-777-width20height22.png" />
-              <a href="#">Thể thao</a>
+              <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/thegioi-1541404755-943-width20height20.png" />
+              <a href="#">Thế giới</a>
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Tennis</a>
+                <a>Điểm nóng</a>
               </li>
               <li>
-                <a>Võ thuật -UFC-Quyền Anh</a>
+                <a>Thế giới động vật</a>
               </li>
               <li>
-                <a>Lịch thi đấu thể thao</a>
+                <a>Theo dòng lịch sử</a>
               </li>
               <li>
-                <a>Người đẹp- ngôi sao</a>
+                <a>Quân sự</a>
               </li>
               <li>
-                <a>Bóng chuyền</a>
-              </li>
-              <li>
-                <a>Bảng xếp hạng tennis</a>
-              </li>
-              <li>
-                <a>Video tennis</a>
-              </li>
-              <li>
-                <a>Tin bên lề thể thao</a>
-              </li>
-              <li>
-                <a>Bảng xếp hạng Thể thao</a>
-              </li>
-              <li>
-                <a>Clip đặc sắc</a>
-              </li>
-              <li>
-                <a>Billard-snooker</a>
-              </li>
-              <li>
-                <a>Thể thao Việt Nam</a>
-              </li>
-              <li>
-                <a>Ảnh thể thao</a>
-              </li>
-              <li>
-                <a>Golf</a>
-              </li>
-              <li>
-                <a>Đua xe thể thao F1</a>
-              </li>
-              <li>
-                <a>Môn thể thao khác</a>
-              </li>
-              <li>
-                <a>Bóng rổ NBA-VBA</a>
+                <a>Cunng đình Trung Hoa</a>
               </li>
             </ul>
           </li>
           <li>
             <div className={cx("category")}>
-              <img src="https://icdn.24h.com.vn/upload/1-2023/images/2023-01-30/phithuong-1675063724-137-width20height20.png" />
-              <a href="#">Chuyện lạ</a>
+              <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/congnghe-1541403477-622-width19height18.png" />
+              <a href="#">Công nghệ thông tin</a>
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Hiếm có khó tìm</a>
+                <a>Phần mềm</a>
               </li>
               <li>
-                <a>Video clip chuyện là</a>
+                <a>Mạng xã hội</a>
               </li>
               <li>
-                <a>Bí hiểm</a>
+                <a>Game</a>
               </li>
               <li>
-                <a>Chuyện lạ quanh ta</a>
+                <a>Thủ thuật - Tiện ích</a>
+              </li>
+              <li>
+                <a>Khám phá công nghệ</a>
               </li>
             </ul>
-          </li> */}
+          </li>
+          <li>
+            <div className={cx("category")}>
+              <img src="https://icdn.24h.com.vn/upload/4-2018/images/2018-11-05/bongda-1541403477-523-width20height20.png" />
+              <a href="#">Bóng đá</a>
+            </div>
+            <ul className={cx("submenu")}>
+              <li>
+                <a>Bóng đá trong nước</a>
+              </li>
+              <li>
+                <a>Tin chuyển nhượng</a>
+              </li>
+              <li>
+                <a>Ngoại Hạng Anh</a>
+              </li>
+              <li>
+                <a>Laliga</a>
+              </li>
+              <li>
+                <a>Serie A</a>
+              </li>
+              <li>
+                <a>Bundesliga</a>
+              </li>
+            </ul>
+          </li>
+        
         </ul>
         <h1 className={cx("search_icon")}></h1>
       </nav>
