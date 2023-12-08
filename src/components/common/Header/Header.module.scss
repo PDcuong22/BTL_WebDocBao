@@ -9,7 +9,7 @@ ul {
 }
 
 nav {
-  width: 80%;
+  width: var(--default-layout-width);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -121,7 +121,7 @@ nav {
 }
 
 .search_icon {
-  background: url(//cdn.24h.com.vn/images/sprites092018.png) no-repeat -50px -4887px;
+  // background: url(//cdn.24h.com.vn/images/sprites092018.png) no-repeat -50px -4887px;
   display: inline-block;
   width: 24px;
   height: 24px;
