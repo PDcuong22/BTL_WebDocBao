@@ -417,16 +417,28 @@ function Header() {
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Tin tức</a>
+                <a href="/subCategory/64bb9f3cf3d0c05481f80a31">Tin tức</a>
               </li>
               <li>
-                <a>Phát minh</a>
+                <a href="/subCategory/64bb9f42f3d0c05481f80a34">Phát minh</a>
               </li>
               <li>
-                <a>Ứng dụng</a>
+                <a href="/subCategory/64bb9f4af3d0c05481f80a37">Ứng dụng</a>
               </li>
               <li>
-                <a>Khoa học trong nước</a>
+                <a href="/subCategory/64bb9f2ef3d0c05481f80a2e">
+                  Khoa học trong nước
+                </a>
+              </li>
+              <li>
+                <a href="/subCategory/64bb9ffcf3d0c05481f80a3d">
+                  Thường thưởng
+                </a>
+              </li>
+              <li>
+                <a href="/subCategory/64bb9f5df3d0c05481f80a3a">
+                  Thế giới tự nhiên
+                </a>
               </li>
             </ul>
           </li>
@@ -437,16 +449,27 @@ function Header() {
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Phim</a>
+                <a href="/subCategory/64bba0abf3d0c05481f80a48">Phim</a>
               </li>
               <li>
-                <a>Âm nhạc</a>
+                <a href="/subCategory/64bba0c0f3d0c05481f80a4b">Âm nhạc</a>
               </li>
               <li>
-                <a>Tin tức giải trí</a>
+                <a href="/subCategory/64c545881ebddab5ecdac5c5">
+                  Tin tức giải trí
+                </a>
               </li>
               <li>
-                <a>Giới sao</a>
+                <a href="/subCategory/64bba083f3d0c05481f80a42">Giới sao</a>
+              </li>
+              <li>
+                <a href="/subCategory/64bba0fdf3d0c05481f80a4e">Sân khấu</a>
+              </li>
+              <li>
+                <a href="/subCategory/64bba105f3d0c05481f80a51">Mĩ thuật</a>
+              </li>
+              <li>
+                <a href="/subCategory/64c547941ebddab5ecdac5d4">TV Show</a>
               </li>
             </ul>
           </li>
@@ -457,10 +480,10 @@ function Header() {
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Chứng khoán</a>
+                <a href="/subCategory/64bb9e42f3d0c05481f80a14">Chứng khoán</a>
               </li>
               <li>
-                <a>Doanh nghiệp</a>
+                <a href="/subCategory/64bb9e3bf3d0c05481f80a11">Doanh nghiệp</a>
               </li>
             </ul>
           </li>
@@ -471,16 +494,24 @@ function Header() {
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Du lịch Việt Nam</a>
+                <a href="/subCategory/64ccfc93a74720bc2319a0a3">
+                  Du lịch Việt Nam
+                </a>
               </li>
               <li>
-                <a>Du lịch Trung Quốc</a>
+                <a href="/subCategory/64ccfca2a74720bc2319a0a6">
+                  Du lịch Trung Quốc
+                </a>
               </li>
               <li>
-                <a>Du lịch Châu Âu</a>
+                <a href="/subCategory/64ccfcaba74720bc2319a0a9">
+                  Du lịch Châu Âu
+                </a>
               </li>
               <li>
-                <a>Du lịch Châu Á</a>
+                <a href="/subCategory/64ccfcb0a74720bc2319a0ac">
+                  Du lịch Châu Á
+                </a>
               </li>
             </ul>
           </li>
@@ -491,13 +522,22 @@ function Header() {
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Món ngon mỗi ngày</a>
+                <a href="/subCategory/64bba31cf3d0c05481f80aa1">
+                  Thực đơn mỗi ngày
+                </a>
               </li>
               <li>
-                <a>Thực đơn</a>
+                <a href="/subCategory/64bba315f3d0c05481f80a9e">
+                  Món ngon mỗi ngày
+                </a>
               </li>
               <li>
-                <a>Tin tức ẩm thực</a>
+                <a href="/subCategory/64c396bc1d8357c808245066">Thực đơn</a>
+              </li>
+              <li>
+                <a href="/subCategory/64ccfcb0a74720bc2319a0ac">
+                  Tin tức ẩm thực
+                </a>
               </li>
             </ul>
           </li>
@@ -508,19 +548,19 @@ function Header() {
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Tin tức</a>
+                <a href="/subCategory/64bba147f3d0c05481f80a55">Tin tức</a>
               </li>
               <li>
-                <a>Dinh dưỡng</a>
+                <a href="/subCategory/64bba160f3d0c05481f80a5b">Dinh dưỡng</a>
               </li>
               <li>
-                <a>Khỏe đẹp</a>
+                <a href="/subCategory/64bba16cf3d0c05481f80a5e">Khỏe đẹp</a>
               </li>
               <li>
-                <a>Các bệnh</a>
+                <a href="/subCategory/64bba17ff3d0c05481f80a64">Các bệnh</a>
               </li>
               <li>
-                <a>Vaccine</a>
+                <a href="/subCategory/64bba18cf3d0c05481f80a67">Vaccine</a>
               </li>
             </ul>
           </li>
@@ -531,7 +571,7 @@ function Header() {
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Hồ sơ phá án</a>
+                <a href="/subCategory/64bba1ecf3d0c05481f80a6c">Hồ sơ phá án</a>
               </li>
             </ul>
           </li>
@@ -542,19 +582,19 @@ function Header() {
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Tin tức</a>
+                <a href="/subCategory/64bba231f3d0c05481f80a75">Tin tức</a>
               </li>
               <li>
-                <a>Tuyển sinh</a>
+                <a href="/subCategory/64bba237f3d0c05481f80a78">Tuyển sinh</a>
               </li>
               <li>
-                <a>Diễn đàn</a>
+                <a href="/subCategory/64bba245f3d0c05481f80a7b">Diễn đàn</a>
               </li>
               <li>
-                <a>Chân dung</a>
+                <a href="/subCategory/64bba24bf3d0c05481f80a7e">Chân dung</a>
               </li>
               <li>
-                <a>Giáo dục 4.0</a>
+                <a href="/subCategory/64bba265f3d0c05481f80a84">Giáo dục 4.0</a>
               </li>
             </ul>
           </li>
@@ -565,19 +605,25 @@ function Header() {
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Tennis</a>
+                <a href="/subCategory/64c395de1d8357c808245055">Tennis</a>
               </li>
               <li>
-                <a>Người đẹp - Ngôi sao</a>
+                <a href="/subCategory/64c396161d8357c808245058">
+                  Người đẹp - Ngôi sao
+                </a>
               </li>
               <li>
-                <a>Bóng chuyền</a>
+                <a href="/subCategory/64c396361d8357c80824505b">Bóng chuyền</a>
               </li>
               <li>
-                <a>Thể thao Việt Nam</a>
+                <a href="/subCategory/64c396481d8357c80824505e">
+                  Thể thao Việt Nam
+                </a>
               </li>
               <li>
-                <a>Môn thể thao khác</a>
+                <a href="/subCategory/64c3965f1d8357c808245061">
+                  Môn thể thao khác
+                </a>
               </li>
             </ul>
           </li>
@@ -588,13 +634,15 @@ function Header() {
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Chính sách</a>
+                <a href="/subCategory/64c8db7d3c5334ecc57c6033">Chính sách</a>
               </li>
               <li>
-                <a>Thị trường</a>
+                <a href="/subCategory/64c9322480b0ef3155bbcaef">Thị trường</a>
               </li>
               <li>
-                <a>Không gian sống</a>
+                <a href="/subCategory/64c9342480b0ef3155bbcb01">
+                  Không gian sống
+                </a>
               </li>
             </ul>
           </li>
@@ -605,10 +653,10 @@ function Header() {
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Tin tức ô tô</a>
+                <a href="/subCategory/64c3972d1d8357c808245070">Tin tức ô tô</a>
               </li>
               <li>
-                <a>Đánh giá xe</a>
+                <a href="/subCategory/64c3973b1d8357c808245073">Đánh giá xe</a>
               </li>
             </ul>
           </li>
@@ -619,13 +667,16 @@ function Header() {
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Nhịp sống</a>
+                <a href="/subCategory/64c382d72833a8bce95440f7">Nhịp sống</a>
               </li>
               <li>
-                <a>Tổ ấm</a>
+                <a href="/subCategory/64c382ed2833a8bce95440fa">Tổ ấm</a>
               </li>
               <li>
-                <a>Bài học sống</a>
+                <a href="/subCategory/64c383192833a8bce95440ff">Bài học sống</a>
+              </li>
+              <li>
+                <a href="/subCategory/64c383272833a8bce9544102">Tiêu dùng</a>
               </li>
             </ul>
           </li>
@@ -636,19 +687,25 @@ function Header() {
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Điểm nóng</a>
+                <a href="/subCategory/64c27c4ffb9f67eee8ec54b9">Điểm nóng</a>
               </li>
               <li>
-                <a>Thế giới động vật</a>
+                <a href="/subCategory/64c27c97fb9f67eee8ec54be">
+                  Thế giới động vật
+                </a>
               </li>
               <li>
-                <a>Theo dòng lịch sử</a>
+                <a href="/subCategory/64c54fe91ebddab5ecdac613">
+                  Theo dòng lịch sử
+                </a>
               </li>
               <li>
-                <a>Quân sự</a>
+                <a href="/subCategory/64c5510d1ebddab5ecdac622">Quân sự</a>
               </li>
               <li>
-                <a>Cunng đình Trung Hoa</a>
+                <a href="/subCategory/64c5528e1ebddab5ecdac635">
+                  Cunng đình Trung Hoa
+                </a>
               </li>
             </ul>
           </li>
@@ -659,19 +716,23 @@ function Header() {
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Phần mềm</a>
+                <a href="/subCategory/64c53c8b1ebddab5ecdac55b">Phần mềm</a>
               </li>
               <li>
-                <a>Mạng xã hội</a>
+                <a href="/subCategory/64c53dc51ebddab5ecdac56a">Mạng xã hội</a>
               </li>
               <li>
-                <a>Game</a>
+                <a href="/subCategory/64c53eeb1ebddab5ecdac579">Game</a>
               </li>
               <li>
-                <a>Thủ thuật - Tiện ích</a>
+                <a href="/subCategory/64c540011ebddab5ecdac58d">
+                  Thủ thuật - Tiện ích
+                </a>
               </li>
               <li>
-                <a>Khám phá công nghệ</a>
+                <a href="/subCategory/64c541241ebddab5ecdac59c">
+                  Khám phá công nghệ
+                </a>
               </li>
             </ul>
           </li>
@@ -682,26 +743,39 @@ function Header() {
             </div>
             <ul className={cx("submenu")}>
               <li>
-                <a>Bóng đá trong nước</a>
+                <a href="/subCategory/64c53a8e1ebddab5ecdac548">
+                  Bóng đá Việt Nam
+                </a>
               </li>
               <li>
-                <a>Tin chuyển nhượng</a>
+                <a href="/subCategory/64bba3cef3d0c05481f80abd">
+                  Tin chuyển nhượng
+                </a>
               </li>
               <li>
-                <a>Ngoại Hạng Anh</a>
+                <a href="/subCategory/64a7b17b645f8748283f73c2">
+                  Ngoại Hạng Anh
+                </a>
               </li>
               <li>
-                <a>Laliga</a>
+                <a href="/subCategory/64a7e525873d78e633d39619">Laliga</a>
               </li>
               <li>
-                <a>Serie A</a>
+                <a href="/subCategory/64b547ef298d592b3e0360bf">Serie A</a>
+              </li>
+
+              <li>
+                <a href="/subCategory/64c535d11ebddab5ecdac524">
+                  Tin bên lề bóng đá
+                </a>
               </li>
               <li>
-                <a>Bundesliga</a>
+                <a href="/subCategory/64c534021ebddab5ecdac517">
+                  Ngôi sao bóng đá
+                </a>
               </li>
             </ul>
           </li>
-        
         </ul>
         <h1 className={cx("search_icon")}></h1>
       </nav>
