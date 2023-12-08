@@ -45,7 +45,7 @@ function Search() {
               <p className={cx("tittle1")}>{item.header}</p>
             </Link>
             <div className={cx("news1")}>
-              <img src={item.image} width="200" height="150" />
+              <img src={item.image} className={cx("image")} />
               <p className={cx("content1")}>{item.content1}</p>
             </div>
           </>
