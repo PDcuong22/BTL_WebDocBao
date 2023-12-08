@@ -55,7 +55,6 @@
 
 .news1 {
   background-color: rgb(234, 248, 210);
-
   padding: 1px 10px;
   overflow: hidden;
   /* Ẩn phần dư thừa của nội dung */
@@ -67,10 +66,16 @@
 .news2 {
   background-color: rgb(213, 236, 171);
   padding: 1px 10px;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
+  overflow: hidden;
+  /* Ẩn phần dư thừa của nội dung */
+  text-overflow: ellipsis;
+  /* Hiển thị dấu chấm ba chấm (...) khi nội dung bị cắt */
+  white-space: nowrap;
 }
 
-.item {
+.item,
+.item2 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -79,10 +84,10 @@
 
 .item a {
   font-size: 13px;
+  margin-left: 6px;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   color: black;
-  margin-left: 6px;
 
   overflow: hidden;
   /* Ẩn phần dư thừa của nội dung */
@@ -96,11 +101,12 @@
 }
 
 .item2 a {
-  margin-left: 6px;
   font-size: 13px;
+  margin-left: 6px;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   color: black;
+
   overflow: hidden;
   /* Ẩn phần dư thừa của nội dung */
   text-overflow: ellipsis;

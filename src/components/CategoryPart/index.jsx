@@ -48,7 +48,7 @@ function CategoryPart({ subCategoryId }) {
           />{" "}
           <Link
             to={`/detail/${articleLevel2[0]?._id}`}
-            style={{ textDecoration: "none" }}
+            style={{ textDecoration: "none", marginLeft: 4 }}
           >
             {articleLevel2[0]?.header}
           </Link>
@@ -59,7 +59,7 @@ function CategoryPart({ subCategoryId }) {
           />
           <Link
             to={`/detail/${articleLevel2[1]?._id}`}
-            style={{ textDecoration: "none" }}
+            style={{ textDecoration: "none", marginLeft: 4 }}
           >
             {articleLevel2[1]?.header}
           </Link>
@@ -68,19 +68,34 @@ function CategoryPart({ subCategoryId }) {
           <Brightness1Icon
             sx={{ fontSize: 8, color: "var(--primary-color)" }}
           />
-          <a>MU sẽ ra sao nếu không kịp mua tiền đạo: Ten Hag phải làm gì đó</a>
+          <Link
+            to={`/detail/${articleLevel2[2]?._id}`}
+            style={{ textDecoration: "none", marginLeft: 4 }}
+          >
+            {articleLevel2[2]?.header}
+          </Link>
         </div>
       </div>
 
       <div className={cx("news2")}>
         <div className={cx("item2")}>
           <SquareIcon sx={{ fontSize: 8, color: "var(--primary-color)" }} />
-          <a>MU sẽ ra sao nếu không kịp mua tiền đạo: Ten Hag phải..</a>
+          <Link
+            to={`/detail/${articleLevel2[3]?._id}`}
+            style={{ textDecoration: "none", marginLeft: 4 }}
+          >
+            {articleLevel2[3]?.header}
+          </Link>
         </div>
         <div className={cx("item2")}>
           <SquareIcon sx={{ fontSize: 8, color: "var(--primary-color)" }} />
 
-          <a>MU sẽ ra sao nếu không kịp mua tiền đạo: Ten Hag phải..</a>
+          <Link
+            to={`/detail/${articleLevel2[4]?._id}`}
+            style={{ textDecoration: "none", marginLeft: 4 }}
+          >
+            {articleLevel2[4]?.header}
+          </Link>
         </div>
       </div>
     </div>
