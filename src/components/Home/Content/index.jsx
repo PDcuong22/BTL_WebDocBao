@@ -30,8 +30,32 @@ function Content() {
       </div>
       <div className={cx("bottom")}>
         <CategoryPart2
-          subName="Giáo dục"
+          categoryName="Giáo dục"
           categoryId="64a79fedc573829b5238bd99"
+          subId="64bba237f3d0c05481f80a78"
+        />
+
+        <CategoryPart2
+          categoryName="Sức khỏe"
+          categoryId="64a79fedc573829b5238bd98"
+          subId="64bba160f3d0c05481f80a5b"
+        />
+        <CategoryPart2
+          categoryName="Khoa học"
+          categoryId="64a79fedc573829b5238bd9a"
+          subId="64bb9f3cf3d0c05481f80a31"
+        />
+
+        <CategoryPart2
+          categoryName="Du lịch"
+          categoryId="64bb8e5d9a1bb7d5928645ac"
+          subId="64ccfcaba74720bc2319a0a9"
+        />
+
+        <CategoryPart2
+          categoryName="Công nghệ thông tin"
+          categoryId="64c53c7d1ebddab5ecdac558"
+          subId="64c541241ebddab5ecdac59c"
         />
       </div>
     </div>

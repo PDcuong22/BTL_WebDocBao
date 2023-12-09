@@ -42,7 +42,7 @@ function Right({ subCategoryId, articleId }) {
         width="100%"
         height="550"
       ></img>
-      <div className={cx("tittle")}>Tin tức thị trường</div>
+      <div className={cx("tittle")}>Tin tức khác</div>
       <div className={cx("table")}>
         {article.slice(0, 6).map((item, index) => (
           <div className={cx("table1")}>
