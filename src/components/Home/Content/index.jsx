@@ -19,6 +19,8 @@ function Content() {
   return (
     <div className={cx("wrapper")}>
       <div className={cx("top")}>
+        <CategoryPart subCategoryId="64c27c4ffb9f67eee8ec54b9" />
+        <CategoryPart subCategoryId="64bba3cef3d0c05481f80abd" />
         <CategoryPart subCategoryId="64bba1ecf3d0c05481f80a6c" />
         <CategoryPart subCategoryId="64bba231f3d0c05481f80a75" />
         <CategoryPart subCategoryId="64c396481d8357c80824505e" />

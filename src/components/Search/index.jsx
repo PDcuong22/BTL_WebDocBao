@@ -41,23 +41,27 @@ function Search() {
 
         {articleLevel1.slice(1).map((item, index) => (
           <>
-            <Link to={`/detail/${item._id}`} style={{ textDecoration: "none" }}>
-              <p className={cx("tittle1")}>{item.header}</p>
-            </Link>
             <div className={cx("news1")}>
               <img src={item.image} className={cx("image")} />
-              <p className={cx("content1")}>{item.content1}</p>
+              <Link
+                to={`/detail/${item._id}`}
+                style={{ textDecoration: "none" }}
+              >
+                <p className={cx("tittle1")}>{item.header}</p>
+              </Link>
             </div>
           </>
         ))}
         {articleLevel2.map((item, index) => (
           <>
-            <Link to={`/detail/${item._id}`} style={{ textDecoration: "none" }}>
-              <p className={cx("tittle1")}>{item.header}</p>
-            </Link>
             <div className={cx("news1")}>
               <img src={item.image} className={cx("image")} />
-              <p className={cx("content1")}>{item.content1}</p>
+              <Link
+                to={`/detail/${item._id}`}
+                style={{ textDecoration: "none" }}
+              >
+                <p className={cx("tittle1")}>{item.header}</p>
+              </Link>
             </div>
           </>
         ))}

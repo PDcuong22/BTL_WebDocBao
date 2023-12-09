@@ -36,6 +36,12 @@ function Right({ subCategoryId, articleId }) {
   };
   return (
     <div className={cx("wrapper")}>
+      <img
+        style={{ marginTop: 12 }}
+        src="https://static-images.vnncdn.net/files/publish/2022/10/22/world-cup-nu-2023-196.jpg"
+        width="100%"
+        height="550"
+      ></img>
       <div className={cx("tittle")}>Tin tức thị trường</div>
       <div className={cx("table")}>
         {article.slice(0, 6).map((item, index) => (
@@ -49,30 +55,6 @@ function Right({ subCategoryId, articleId }) {
           </div>
         ))}
       </div>
-      {/* <div className={cx("tittle")}>Thông tin chứng khoán</div>
-      <table>
-        <tr>
-          <a> VN-INDEX </a>
-          <g> 1138.07 </g>
-          <g> ▲ </g>
-          <g> +11.85 </g>
-          <g> (+1.05%) </g>
-        </tr>
-        <tr>
-          <a> VN30-INDEX </a>
-          <g> 1129.43 </g>
-          <g> ▲ </g>
-          <g> +9.99 </g>
-          <g> (+0.89%) </g>
-        </tr>
-        <tr>
-          <a> HNX-INDEX </a>
-          <g> 225.82 </g>
-          <g> ▲ </g>
-          <g> +0.74 </g>
-          <g> (+0.33) </g>
-        </tr>
-      </table> */}
     </div>
   );
 }

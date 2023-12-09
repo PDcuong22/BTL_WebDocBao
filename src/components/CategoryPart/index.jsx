@@ -38,7 +38,12 @@ function CategoryPart({ subCategoryId }) {
         <p className={cx("tittle")}>{articleLevel1[0]?.header}</p>
       </Link>
       <div className={cx("news")}>
-        <img style={{ width: 120, height: 90 }} src={articleLevel1[0]?.image} />
+        <div>
+          <img
+            style={{ width: "120px", height: "90px" }}
+            src={articleLevel1[0]?.image}
+          />
+        </div>
         <p className={cx("content")}>{articleLevel1[0]?.content1}</p>
       </div>
       <div className={cx("news1")}>
