@@ -25,7 +25,6 @@
   padding: 4px;
   margin-left: 8px;
   font-weight: 500;
-
   &:hover {
     cursor: pointer;
     color: var(--primary-color);
@@ -36,16 +35,12 @@
   font-size: 16px;
   font-weight: 600;
   padding: 4px 0;
-
   &:hover {
     cursor: pointer;
     color: var(--primary-color);
   }
-
-  overflow: hidden;
-  /* Ẩn phần dư thừa của nội dung */
-  text-overflow: ellipsis;
-  /* Hiển thị dấu chấm ba chấm (...) khi nội dung bị cắt */
+  overflow: hidden; /* Ẩn phần dư thừa của nội dung */
+  text-overflow: ellipsis; /* Hiển thị dấu chấm ba chấm (...) khi nội dung bị cắt */
   white-space: nowrap;
 }
 
@@ -71,7 +66,6 @@
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   color: black;
-
   &:hover {
     cursor: pointer;
     color: var(--primary-color);

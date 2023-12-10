@@ -41,8 +41,8 @@ nav {
   }
 }
 
-.menu>li,
-.menu>a {
+.menu > li,
+.menu > a {
   display: inline-block;
 }
 
@@ -54,7 +54,7 @@ nav {
   font-size: 10px;
 }
 
-.menu>li:hover {
+.menu > li:hover {
   background-color: #196c3d;
   color: #fff;
 }
@@ -90,7 +90,6 @@ nav {
   top: 0;
   background: #2c3e50;
   display: none;
-
   li {
     a {
       padding: 6px;
@@ -98,12 +97,12 @@ nav {
   }
 }
 
-.menu>li:hover>.submenu {
+.menu > li:hover > .submenu {
   display: block;
   background-color: #219956;
 }
 
-.submenu>li:hover>.submenu2 {
+.submenu > li:hover > .submenu2 {
   display: block;
   color: white;
 }
@@ -140,7 +139,6 @@ nav {
     color: white !important;
   }
 }
-
 .submenu2 {
   a {
     border-bottom: 1px solid whitesmoke;
