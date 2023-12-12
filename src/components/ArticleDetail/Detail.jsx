@@ -38,7 +38,7 @@ function ArticleDetail() {
             </div>
           </div>
           <div className={cx("header-item3")}>
-            {Moment(article[0]?.createdAt).format("dddd, DD/MM/YYYY HH:mm")}
+            {/* {Moment(article[0]?.createdAt).format("dddd, DD/MM/YYYY HH:mm")} */}
           </div>
         </div>
 
