@@ -36,10 +36,8 @@ function ArticleDetail1() {
             {Moment(article[0]?.createdAt).format("dddd, DD/MM/YYYY HH:mm")}
           </div>
         </div>
-
         <div className={cx("tittle")}>{article[0]?.articleName}</div>
         <div dangerouslySetInnerHTML={{ __html: article[0]?.content }}></div>
-
         <div className={cx("content4")}>{article[0]?.authorId.authorName}</div>
       </div>
       <div className={cx("right")}>h1h1</div>
