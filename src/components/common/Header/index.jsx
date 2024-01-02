@@ -1,10 +1,36 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import classNames from "classnames/bind";
 import styles from "./Header.module.scss";
+import {
+  Box,
+  Button,
+  Input,
+  Menu,
+  MenuItem,
+  Paper,
+  Typography,
+} from "@mui/material";
+import { articleApi } from "../../../services/article-api";
 
 const cx = classNames.bind(styles);
 
 function Header() {
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    window.location.reload();
+  };
+
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   return (
     <div className={cx("wrapper")}>
       <nav>
@@ -385,6 +411,42 @@ function Header() {
           </li>
         </ul>
         <h1 className={cx("search_icon")}></h1>
+
+        {/* login */}
+        {user ? (
+          <div>
+            <Button
+              aria-controls={open ? "basic-menu" : undefined}
+              aria-expanded={open ? "true" : undefined}
+              onClick={handleClick}
+            >
+              <Typography color={"white"}>{user?.userName}</Typography>
+            </Button>
+            <Menu
+              anchorEl={anchorEl}
+              open={open}
+              onClose={handleClose}
+              MenuListProps={{
+                "aria-labelledby": "basic-button",
+              }}
+            >
+              {user?.role === "admin" && (
+                <MenuItem
+                  onClick={() => (window.location.href = "/admin/news")}
+                >
+                  Admin
+                </MenuItem>
+              )}
+              <MenuItem onClick={handleLogout}>Logout</MenuItem>
+            </Menu>
+          </div>
+        ) : (
+          <div className={cx("login")}>
+            <div className={cx("login_text")}>
+              <a href="/login">Đăng nhập</a>
+            </div>
+          </div>
+        )}
       </nav>
     </div>
   );
