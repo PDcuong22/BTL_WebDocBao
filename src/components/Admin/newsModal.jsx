@@ -16,6 +16,7 @@ import {
 import Editor from "../Editer";
 import toast from "react-hot-toast";
 import { articleApi } from "../../services/article-api";
+import { categoryApi } from "../../services/category-api";
 
 const style = {
   position: "absolute",
@@ -46,19 +47,24 @@ const initialArticle = {
 
 const NewsModal = React.memo(({ open, setOpen }) => {
   const [category, setCategory] = React.useState([]);
+  const [subCategory, setSubCategory] = React.useState([]);
   const [author, setAuthor] = React.useState([]);
   const [articleData, setArticleData] = React.useState(initialArticle);
+  const [categorySelected, setCategorySelected] = React.useState(null);
+  const [subCategoryUpdated, setSubCategoryUpdated] = React.useState([]);
 
   React.useEffect(() => {
     const fetchData = async () => {
       try {
-        const [authors, categories] = await Promise.all([
+        const [authors, categories, subCategory] = await Promise.all([
           authorApi.gets(),
+          categoryApi.getAllCategories(),
           subCateogryApi.getAllSubCategories(),
         ]);
 
         setAuthor(authors);
         setCategory(categories);
+        setSubCategory(subCategory);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -67,7 +73,20 @@ const NewsModal = React.memo(({ open, setOpen }) => {
     fetchData();
   }, []);
 
-  const handleClose = () => setOpen(false);
+  React.useEffect(() => {
+    categorySelected &&
+      setSubCategoryUpdated(
+        subCategory.filter((sb) => sb.categoryId === categorySelected)
+      );
+  }, [categorySelected, subCategory]);
+
+  const handleClose = () => {
+    setCategory([]);
+    setSubCategory([]);
+    setSubCategoryUpdated([]);
+    setCategorySelected(null);
+    setOpen(false);
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -211,9 +230,28 @@ const NewsModal = React.memo(({ open, setOpen }) => {
                 <Select
                   defaultValue={
                     category.find((a) => a.categoryId === articleData.authorId)
-                      ?.subCategoryName
+                      ?.categoryName
                   }
                   label="Category"
+                  onChange={(e) => setCategorySelected(e.target.value)}
+                >
+                  {category.map((a) => (
+                    <MenuItem value={a._id} key={a._id}>
+                      {a.categoryName}
+                    </MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+              <FormControl fullWidth>
+                <InputLabel>SubCategory</InputLabel>
+                <Select
+                  disabled={!categorySelected}
+                  defaultValue={
+                    subCategoryUpdated.find(
+                      (a) => a.categoryId === articleData.authorId
+                    )?.subCategoryName
+                  }
+                  label="SubCategory"
                   onChange={(e) =>
                     setArticleData((prev) => ({
                       ...prev,
@@ -221,7 +259,7 @@ const NewsModal = React.memo(({ open, setOpen }) => {
                     }))
                   }
                 >
-                  {category.map((a) => (
+                  {subCategoryUpdated.map((a) => (
                     <MenuItem value={a._id} key={a._id}>
                       {a.subCategoryName}
                     </MenuItem>

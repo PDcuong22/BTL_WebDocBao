@@ -1,16 +1,16 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import classNames from "classnames/bind";
 import styles from "./Header.module.scss";
 import {
-  Box,
+  Badge,
   Button,
-  Input,
+  IconButton,
   Menu,
   MenuItem,
-  Paper,
   Typography,
 } from "@mui/material";
-import { articleApi } from "../../../services/article-api";
+import MessageIcon from "@mui/icons-material/Message";
+import messageApi from "../../../services/message-api";
 
 const cx = classNames.bind(styles);
 
@@ -30,6 +30,17 @@ function Header() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const [messagesUnread, setMessagesUnread] = useState([]);
+  useEffect(() => {
+    const getMessaggesUnred = async () => {
+      const res = await messageApi.getMessagesUnread(user?._id);
+      setMessagesUnread(res.filter((m) => m.seen === false));
+    };
+    getMessaggesUnred();
+  }, [user?._id]);
+
+  console.log(messagesUnread);
 
   return (
     <div className={cx("wrapper")}>
@@ -415,6 +426,11 @@ function Header() {
         {/* login */}
         {user ? (
           <div>
+            <IconButton onClick={() => (window.location.href = "/message")}>
+              <Badge badgeContent={messagesUnread.length} color="error">
+                <MessageIcon sx={{ color: "white" }} />
+              </Badge>
+            </IconButton>
             <Button
               aria-controls={open ? "basic-menu" : undefined}
               aria-expanded={open ? "true" : undefined}
