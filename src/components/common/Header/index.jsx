@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import classNames from "classnames/bind";
 import styles from "./Header.module.scss";
 import {
@@ -14,7 +14,7 @@ import messageApi from "../../../services/message-api";
 
 const cx = classNames.bind(styles);
 
-function Header() {
+function Header({ socket }) {
   const user = JSON.parse(localStorage.getItem("user"));
 
   const handleLogout = () => {
@@ -32,15 +32,18 @@ function Header() {
   };
 
   const [messagesUnread, setMessagesUnread] = useState([]);
+  const getMessaggesUnred = async () => {
+    const res = await messageApi.getMessagesUnread(user?._id);
+    setMessagesUnread(res.filter((m) => m.seen === false));
+  };
   useEffect(() => {
-    const getMessaggesUnred = async () => {
-      const res = await messageApi.getMessagesUnread(user?._id);
-      setMessagesUnread(res.filter((m) => m.seen === false));
-    };
     getMessaggesUnred();
-  }, [user?._id]);
-
-  console.log(messagesUnread);
+  }, [user?._id, socket]);
+  if (socket?.current) {
+    socket?.current.on("msg-recieve", async () => {
+      getMessaggesUnred();
+    });
+  }
 
   return (
     <div className={cx("wrapper")}>
@@ -425,7 +428,7 @@ function Header() {
 
         {/* login */}
         {user ? (
-          <div>
+          <div style={{ display: "flex", flexDirection: "row" }}>
             <IconButton onClick={() => (window.location.href = "/message")}>
               <Badge badgeContent={messagesUnread.length} color="error">
                 <MessageIcon sx={{ color: "white" }} />
